@@ -6,4 +6,9 @@
     <RootNamespace>test_dotnet</RootNamespace>
     <InvariantGlobalization>true</InvariantGlobalization>
   </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.7.3"/>
+    <PackageReference Include="Swashbuckle.AspNetCore.Annotations" Version="6.7.3"/>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="8.0.6"/>
+  </ItemGroup>
 </Project>

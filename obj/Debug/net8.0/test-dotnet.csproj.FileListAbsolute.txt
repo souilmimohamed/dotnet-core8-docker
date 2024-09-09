@@ -23,3 +23,16 @@
 /home/souilmi/Projects/test-dotnet/obj/Debug/net8.0/test-dotnet.pdb
 /home/souilmi/Projects/test-dotnet/obj/Debug/net8.0/test-dotnet.genruntimeconfig.cache
 /home/souilmi/Projects/test-dotnet/obj/Debug/net8.0/ref/test-dotnet.dll
+/home/souilmi/Projects/test-dotnet/bin/Debug/net8.0/Microsoft.OpenApi.dll
+/home/souilmi/Projects/test-dotnet/bin/Debug/net8.0/Swashbuckle.AspNetCore.Annotations.dll
+/home/souilmi/Projects/test-dotnet/bin/Debug/net8.0/Swashbuckle.AspNetCore.Swagger.dll
+/home/souilmi/Projects/test-dotnet/bin/Debug/net8.0/Swashbuckle.AspNetCore.SwaggerGen.dll
+/home/souilmi/Projects/test-dotnet/bin/Debug/net8.0/Swashbuckle.AspNetCore.SwaggerUI.dll
+/home/souilmi/Projects/test-dotnet/obj/Debug/net8.0/test-dotnet.csproj.AssemblyReference.cache
+/home/souilmi/Projects/test-dotnet/obj/Debug/net8.0/test-dotnet.MvcApplicationPartsAssemblyInfo.cs
+/home/souilmi/Projects/test-dotnet/obj/Debug/net8.0/test-dotnet.sourcelink.json
+/home/souilmi/Projects/test-dotnet/obj/Debug/net8.0/test-dotnet.csproj.CopyComplete
+/home/souilmi/Projects/test-dotnet/bin/Debug/net8.0/Microsoft.AspNetCore.JsonPatch.dll
+/home/souilmi/Projects/test-dotnet/bin/Debug/net8.0/Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+/home/souilmi/Projects/test-dotnet/bin/Debug/net8.0/Newtonsoft.Json.dll
+/home/souilmi/Projects/test-dotnet/bin/Debug/net8.0/Newtonsoft.Json.Bson.dll
