@@ -1,8 +1,17 @@
 using System.Text.Json.Serialization;
 using Newtonsoft.Json.Serialization;
 
+var MyOrigins = "_myOrigins";
 var builder = WebApplication.CreateSlimBuilder(args);
 
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy(name: MyOrigins,
+    policy =>
+    {
+        policy.WithOrigins("http://localhost:4200");
+    });
+});
 builder.Services.ConfigureHttpJsonOptions(options =>
 {
     options.SerializerOptions.TypeInfoResolverChain.Insert(0, AppJsonSerializerContext.Default);
@@ -13,15 +22,14 @@ builder.Services.AddControllers()
 .AddNewtonsoftJson(options => options.SerializerSettings.ContractResolver = new DefaultContractResolver());
 
 var app = builder.Build();
-if (app.Environment.IsDevelopment())
+
+app.UseSwagger();
+app.UseSwaggerUI(options =>
 {
-    app.UseSwagger();
-    app.UseSwaggerUI(options =>
-    {
-        options.SwaggerEndpoint("/swagger/v1/swagger.json", "v1");
-        options.RoutePrefix = string.Empty;
-    });
-}
+    options.SwaggerEndpoint("/swagger/v1/swagger.json", "v1");
+    options.RoutePrefix = string.Empty;
+});
+app.UseCors(MyOrigins);
 app.MapControllerRoute(
     name: "default",
     pattern: "api/{controller}/{action}/{id?}"
